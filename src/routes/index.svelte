@@ -32,6 +32,18 @@
 			font-size: 4em;
 		}
 	}
+
+	@define-mixin colorBlue {
+		color: blue;
+	}
+
+	.blue {
+		@mixin colorBlue;
+	}
+
+	.red {
+		@mixin colorRed;
+	}
 </style>
 
 <svelte:head>
@@ -50,3 +62,8 @@
 		Try editing this file (src/routes/index.svelte) to test live reloading.
 	</strong>
 </p>
+
+<div>
+	<p class="red">This is colored in red</p>
+	<p class="blue">This is colored in blue</p>
+</div>
