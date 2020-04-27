@@ -1,6 +1,8 @@
-# sapper-template-rollup
+# sapper-template-firebase
 
-A modified default [Sapper](https://github.com/sveltejs/sapper) template, available for Rollup.
+A modified default [Sapper](https://github.com/sveltejs/sapper) template, available for Rollup with Firebase functions.
+
+https://sapper-template-firebase.web.app/
 
 ## Getting started
 
@@ -10,7 +12,7 @@ A modified default [Sapper](https://github.com/sveltejs/sapper) template, availa
 
 ```bash
 # for Rollup with postcss, purgecss, cssnano, tailwindcss and svelte-preprocess
-npx degit "nhristov/sapper-template-rollup" my-app
+npx degit "nhristov/sapper-template-firebase" my-app
 ```
 
 ### Running the project
@@ -26,3 +28,13 @@ npm run dev
 Open up [localhost:3000](http://localhost:3000) and start clicking around.
 
 Consult [sapper.svelte.dev](https://sapper.svelte.dev) for help getting started.
+
+### Deploying on Firebase
+
+Replace `sapper-template-firebase` with your project's name in .firebaserc
+
+```bash
+cd my-app
+npm run build # or yarn
+firebase deploy
+```
